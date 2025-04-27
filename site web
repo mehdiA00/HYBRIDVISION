@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Univers Cinématographique</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #111;
+            color: #fff;
+        }
+        header {
+            height: 100vh;
+            background: url('background-video-placeholder.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 3em;
+            background: rgba(0,0,0,0.6);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .videos, .photos {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+        }
+        .videos iframe, .photos img {
+            border: 5px solid #333;
+            border-radius: 10px;
+            min-width: 300px;
+            height: 200px;
+        }
+        .tarifs table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .tarifs th, .tarifs td {
+            padding: 15px;
+            border: 1px solid #555;
+            text-align: left;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 600px;
+            margin: auto;
+        }
+        input, textarea {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            padding: 12px;
+            background: #e50914;
+            border: none;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #b20710;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>CAPTURER L'ÉMOTION. RACONTER VOTRE HISTOIRE.</h1>
+</header>
+
+<section>
+    <h2>🎬 Mes Réalisations Vidéo</h2>
+    <div class="videos">
+        <iframe src="https://www.youtube.com/embed/videoid1" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/videoid2" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/videoid3" frameborder="0" allowfullscreen></iframe>
+    </div>
+</section>
+
+<section>
+    <h2>🎟️ Photogrammes</h2>
+    <div class="photos">
+        <img src="photo1.jpg" alt="Photo 1">
+        <img src="photo2.jpg" alt="Photo 2">
+        <img src="photo3.jpg" alt="Photo 3">
+    </div>
+</section>
+
+<section class="tarifs">
+    <h2>📅 Production & Budget</h2>
+    <table>
+        <tr>
+            <th>Prestation</th>
+            <th>Description</th>
+            <th>Prix</th>
+        </tr>
+        <tr>
+            <td>Shooting Photo</td>
+            <td>1h, 20 photos retouchées</td>
+            <td>€200</td>
+        </tr>
+        <tr>
+            <td>Reportage Événementiel</td>
+            <td>4h, 100 photos</td>
+            <td>€600</td>
+        </tr>
+        <tr>
+            <td>Clip Vidéo</td>
+            <td>Tournage + montage 1min30</td>
+            <td>€800</td>
+        </tr>
+    </table>
+</section>
+
+<section>
+    <h2>📨 Me contacter</h2>
+    <form>
+        <input type="text" placeholder="Votre nom" required>
+        <input type="email" placeholder="Votre email" required>
+        <textarea rows="5" placeholder="Votre message"></textarea>
+        <button type="submit">Envoyer</button>
+    </form>
+</section>
+
+</body>
+</html>
