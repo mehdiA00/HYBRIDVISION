@@ -142,3 +142,14 @@ footer {
   0%, 100% { transform: rotate(0deg); }
   50% { transform: rotate(-10deg); }
 }
+
+.video-block {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.video-description {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #ccc;
+}
