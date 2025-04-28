@@ -211,3 +211,55 @@ footer {
   font-size: 1.2rem;
   color: #f39c12;
 }
+.tarifs-mariage {
+  padding: 60px 20px;
+  background-color: #eaf1ee; /* fond clair comme ton flyer */
+  color: #194c41; /* vert foncé */
+  text-align: center;
+}
+
+.tarifs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.formule {
+  background: #ffffff;
+  border: 2px solid #194c41;
+  border-radius: 10px;
+  padding: 30px;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.formule h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.formule p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.formule .prix {
+  font-size: 22px;
+  font-weight: bold;
+  color: #194c41;
+  margin-top: 20px;
+}
+
+.formule .offre {
+  color: #19784c;
+  font-weight: bold;
+}
+
+.info-supplementaires {
+  margin-top: 50px;
+  font-size: 18px;
+}
+
