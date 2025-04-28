@@ -8,6 +8,25 @@
   <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
 </head>
+  <script>
+function startSite() {
+  const clapSound = document.getElementById('clap-sound');
+  clapSound.play();
+  setTimeout(() => {
+    document.getElementById('clap-loader').style.display = 'none';
+  }, 1500); // 1,5 secondes après le clap
+}
+
+// Animation au scroll
+window.addEventListener('scroll', () => {
+  document.querySelectorAll('section').forEach(sec => {
+    if (sec.getBoundingClientRect().top < window.innerHeight - 100) {
+      sec.classList.add('show');
+    }
+  });
+});
+</script>
+
 <body>
 
 <!-- Loader Clap Cinéma -->
