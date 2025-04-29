@@ -265,3 +265,40 @@ footer {
   margin-top: 0.5rem;
   font-style: italic;
 }
+.temoignages-section {
+  background: #f2fdfb;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+.temoignages-section h2 {
+  color: #194c41;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+.carousel {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+.temoignage {
+  flex: 0 0 250px;
+  background: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  scroll-snap-align: center;
+}
+.temoignage img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+.temoignage p {
+  font-style: italic;
+  color: #194c41;
+}
