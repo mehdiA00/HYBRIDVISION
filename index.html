@@ -1,81 +1,159 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HYBRIDVISION - Accueil</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hybrid Vision – Vidéaste & Photographe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: #eaf1ee;
+      color: #194c41;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background: #0e1e1a;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav .logo {
+      font-family: 'Cinzel', serif;
+      font-size: 1.8rem;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+    header.hero {
+      background: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      text-shadow: 2px 2px 4px #000;
+    }
+    .section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section h2 {
+      font-family: 'Cinzel', serif;
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+    .tarifs-grid {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+    .formule {
+      width: 280px;
+      padding: 1rem;
+      border-left: 2px solid #194c41;
+      border-right: 2px solid #194c41;
+      background: white;
+    }
+    .formule h3 {
+      font-family: 'Cinzel', serif;
+      font-size: 1.2rem;
+    }
+    .formule p {
+      margin: 0.5rem 0;
+    }
+    .prix {
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+    .bonus {
+      color: #007f63;
+      font-weight: bold;
+    }
+    .infos {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #0e1e1a;
+      font-size: 0.9rem;
+      color: white;
+    }
+  </style>
 </head>
 <body>
+  <nav>
+    <div class="logo">HYBRIDVISION</div>
+    <ul>
+      <li><a href="#accueil">Accueil</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#tarifs">Tarifs</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-<!-- Loader Clap -->
-<div id="clap-loader">
-  <div class="clap-text">🎬 Cliquez ici pour commencer 🎬</div>
-</div>
+  <header class="hero" id="accueil">
+    <h1>HYBRIDVISION</h1>
+    <p>Vidéaste & Photographe – Mariage, Corporate, Cinéma</p>
+  </header>
 
-<!-- Navigation -->
-<nav>
-  <div class="logo"><img src="images/logo.png" alt="HybridVision Logo"></div>
-  <ul>
-    <li><a href="index.html">Accueil</a></li>
-    <li><a href="portfolio.html">Portfolio</a></li>
-    <li><a href="tarifs.html">Tarifs</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
-
-<!-- Hero Section -->
-<header class="hero">
-  <h1>Bienvenue chez HYBRIDVISION</h1>
-  <p>Votre histoire, capturée avec l'âme du cinéma.</p>
-</header>
-
-<!-- A propos -->
-<section class="about">
-  <h2>Qui suis-je ?</h2>
-  <p>Vidéaste et photographe passionné, je sublime vos moments les plus précieux : mariages, événements corporate, clips cinéma... Mon but est de raconter votre histoire avec émotion et authenticité.</p>
-</section>
-
-<!-- Vision -->
-<section class="vision">
-  <h2>Mon Univers</h2>
-  <div class="vision-cards">
-    <div class="card">🎥 Mariage</div>
-    <div class="card">🏢 Corporate</div>
-    <div class="card">🎬 Cinéma</div>
-  </div>
-</section>
-
-<section class="temoignages-section">
-  <h2>Ils nous ont fait confiance</h2>
-  <div class="carousel">
-    <div class="temoignage">
-      <img src="images/client1.png" alt="Client 1">
-      <p>"Un film magnifique, beaucoup d’émotion ! Merci encore."</p>
+  <section class="section" id="portfolio">
+    <h2>Portfolio Vidéo</h2>
+    <div>
+      <h3>Domaine d'exception</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/zfYxvDryA8I" frameborder="0" allowfullscreen></iframe>
+      <p>Vidéo de présentation d'un domaine de mariage</p>
+      <h3>Extrait Mariage</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/lZ_MFC6lmQg" frameborder="0" allowfullscreen></iframe>
+      <p>Extrait vidéo d’un mariage – ambiance naturelle et émotionnelle</p>
     </div>
-    <div class="temoignage">
-      <img src="images/client2.png" alt="Client 2">
-      <p>"Professionnalisme, discrétion et rendu incroyable."</p>
+  </section>
+
+  <section class="section" id="tarifs">
+    <h2>Vidéo de mariage – Tarifs</h2>
+    <div class="tarifs-grid">
+      <div class="formule">
+        <h3>FORMULE STANDARD</h3>
+        <p>De la <strong>cérémonie</strong> jusqu’au <strong>gâteau</strong><br> sur place jusqu’à <strong>minuit</strong></p>
+        <p><strong>Film monté</strong> de <strong>6 à 12 min</strong></p>
+        <p class="prix">899 euros TTC</p>
+      </div>
+      <div class="formule">
+        <h3>FORMULE PREMIUM</h3>
+        <p>Des <strong>préparatifs</strong> jusqu’au <strong>gâteau</strong><br> sur place jusqu’à <strong>minuit</strong></p>
+        <p><strong>Film monté</strong> de <strong>10 à 20 min</strong></p>
+        <p class="prix">1 199 euros TTC</p>
+        <p class="bonus">+ Plan drone OFFERT</p>
+      </div>
     </div>
-    <div class="temoignage">
-      <img src="images/client3.png" alt="Client 3">
-      <p>"On revit notre mariage à chaque visionnage !"</p>
+    <div class="infos">
+      <p><strong>Film livré</strong> sur clé <strong>USB gravée</strong> au <strong>nom des mariés</strong></p>
+      <p>hybridvisioncontact@gmail.com – 06 48 76 06 37</p>
     </div>
-  </div>
-</section>
+  </section>
 
-
-<!-- Footer -->
-<footer>
-  <p>© 2025 HYBRIDVISION. Tous droits réservés.</p>
-</footer>
-
-<!-- Script Clap -->
-<script>
-document.getElementById('clap-loader').addEventListener('click', function() {
-  this.style.display = 'none';
-});
-</script>
-
+  <footer>
+    © 2025 Hybrid Vision – Tous droits réservés.
+  </footer>
 </body>
 </html>
