@@ -19,25 +19,54 @@
   </nav>
 
   <section class="section">
-    <h2>Formules Vidéo de Mariage</h2>
+    <h2>Tarifs</h2>
     <div class="tarifs-grid">
       <div class="formule">
-        <h3>FORMULE STANDARD</h3>
-        <p>De la cérémonie jusqu’au gâteau – présence jusqu’à minuit</p>
-        <p>Film monté de 6 à 12 minutes</p>
-        <p class="prix">899 € TTC</p>
+        <h3>Formule Mariage Essentielle</h3>
+        <p>• Cérémonie, vin d'honneur & soirée</p>
+        <p>• Montage vidéo court & long</p>
+        <p class="prix">Prix : 1200€</p>
       </div>
+
       <div class="formule">
-        <h3>FORMULE PREMIUM</h3>
-        <p>Des préparatifs jusqu’au gâteau – présence jusqu’à minuit</p>
-        <p>Film monté de 10 à 20 minutes</p>
-        <p class="prix">1199 € TTC</p>
-        <p class="bonus">+ Plan drone OFFERT</p>
+        <h3>Formule Mariage Premium</h3>
+        <p>• Tournage sur deux jours</p>
+        <p>• Vidéos drone & interviews des proches</p>
+        <p class="prix">Prix : 1800€</p>
+      </div>
+
+      <div class="formule">
+        <h3>Vidéo Corporate</h3>
+        <p>• Film de présentation, interview, reportage événementiel</p>
+        <p>• Tournage sur site, montage professionnel</p>
+        <p class="prix">Sur devis</p>
+      </div>
+
+      <div class="formule">
+        <h3>Vidéo Cinéma & Artistique</h3>
+        <p>• Clip musical, fiction, documentaire</p>
+        <p>• Direction artistique & scénario possible</p>
+        <p class="prix">Sur devis</p>
       </div>
     </div>
-    <div class="infos">
-      <p>Livraison sur clé USB gravée au nom des mariés</p>
-      <p>Contact : hybridvisioncontact@gmail.com – 06 48 76 06 37</p>
+
+    <div class="devis-section">
+      <h3>Demandez un devis personnalisé</h3>
+      <form action="mailto:hybridvisioncontact@gmail.com" method="POST" enctype="text/plain">
+        <label for="email">Votre email :</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="type">Type de projet :</label>
+        <select id="type" name="type">
+          <option value="corporate">Vidéo Corporate</option>
+          <option value="cinema">Vidéo Cinéma / Artistique</option>
+        </select>
+
+        <label for="message">Détaillez votre demande :</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Envoyer ma demande</button>
+      </form>
     </div>
   </section>
 
