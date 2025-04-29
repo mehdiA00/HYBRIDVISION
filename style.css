@@ -211,55 +211,57 @@ footer {
   font-size: 1.2rem;
   color: #f39c12;
 }
-.tarifs-mariage {
-  padding: 60px 20px;
-  background-color: #eaf1ee; /* fond clair comme ton flyer */
-  color: #194c41; /* vert foncé */
+.tarifs-section {
+  background: #eaf1ee;
+  color: #194c41;
+  font-family: 'Helvetica Neue', sans-serif;
   text-align: center;
+  padding: 3rem 1rem;
 }
 
-.tarifs-container {
+.titre-principal {
+  font-size: 2rem;
+  font-family: 'Brush Script MT', cursive;
+  margin-bottom: 2rem;
+}
+
+.tarifs-grid {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;
-  margin-top: 40px;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
 }
 
 .formule {
-  background: #ffffff;
-  border: 2px solid #194c41;
-  border-radius: 10px;
-  padding: 30px;
   width: 300px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-left: 2px solid #194c41;
+  border-right: 2px solid #194c41;
+  padding: 1rem;
 }
-
-.formule h3 {
+.formule h2 {
   font-family: 'Cinzel', serif;
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
-
 .formule p {
-  margin: 10px 0;
-  font-size: 16px;
+  margin: 0.5rem 0;
 }
-
 .formule .prix {
-  font-size: 22px;
   font-weight: bold;
-  color: #194c41;
-  margin-top: 20px;
+  font-size: 1.1rem;
+  margin-top: 1rem;
 }
-
-.formule .offre {
-  color: #19784c;
+.bonus {
+  color: #007f63;
   font-weight: bold;
 }
 
-.info-supplementaires {
-  margin-top: 50px;
-  font-size: 18px;
+.infos {
+  margin-top: 2rem;
+  font-size: 0.95rem;
 }
-
+.infos .contact {
+  margin-top: 0.5rem;
+  font-style: italic;
+}
